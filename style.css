@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    width: 10vw;
+
+    background-color: grey;
+}
+
+#salutation {
+    margin: 0;
+}
+
+.hello  {
+    margin: 0;
+}
