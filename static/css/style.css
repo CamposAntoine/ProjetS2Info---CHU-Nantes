@@ -14,7 +14,14 @@ header {
     background-color: var(--bleu);
 }
 
-#logo-box {
-    border: 2px solid var(--bleu);
-    
+#logo_chu_accueil {
+    width: 50%;
+    object-position: left;
+    object-fit: contain;
+}
+
+#logo_mines_accueil {
+    width: 50%;
+    object-position: right;
+    object-fit: contain;
 }
