@@ -12,9 +12,30 @@ header {
     max-height: 50px;
 
     background-color: var(--bleu);
+
+    display: flex;
 }
 
 #logo-box {
+    display: flex;
+    align-items: center;
+
     border: 2px solid var(--bleu);
-    
+    background-color: white;
+
+    & > img {
+        height: 46px;
+    }
+
+    & > #logo-mines {
+        height:55px
+    }
+
+    & > #separateur {
+        width: 1px;
+        height: 35px;
+        margin-left: 15px;
+
+        background-color: var(--bleu);
+    }
 }
