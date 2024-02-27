@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    </head>
+    <body>
+        <h1> Index for {{name}}</h1>
+        <p> This is the index page </p>
+        <ul>
+            {%for x in data%}
+            <li>{{x}}</li>
+            {%endfor%}
+        </ul>
+        <a href= "/about"> About </a>
+    </body>
+</html>
