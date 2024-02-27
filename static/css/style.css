@@ -2,9 +2,19 @@
     --bleu: #2964a6;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     width: 100%;
-    max-height: 20px;
+    max-height: 50px;
 
     background-color: var(--bleu);
+}
+
+#logo-box {
+    border: 2px solid var(--bleu);
+    
 }
