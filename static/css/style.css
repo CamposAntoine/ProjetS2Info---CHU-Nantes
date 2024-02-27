@@ -63,13 +63,15 @@ header button {
 }
 
 #logo_chu_accueil {
-    width: 50%;
+    width: 30%;
     object-position: left;
     object-fit: contain;
+    display: inline-block;
 }
 
 #logo_mines_accueil {
     width: 50%;
     object-position: right;
     object-fit: contain;
+    display: inline-block;
 }
