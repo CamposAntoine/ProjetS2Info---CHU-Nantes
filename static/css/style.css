@@ -1,0 +1,10 @@
+:root {
+    --bleu: #2964a6;
+}
+
+header {
+    width: 100%;
+    max-height: 20px;
+
+    background-color: var(--bleu);
+}
