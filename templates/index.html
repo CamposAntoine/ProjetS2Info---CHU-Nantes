@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block header %}
+<img src="{{ lien_image }}" alt="Image d'article"/>
+<div id="chapeau_article">
+    <h1>{{ titre }}</h1>
+    <div>
+        {% for ligne in accroche %}
+            <p>{{ ligne }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+{% for id, art in articles.items() %}
+    <section onclick="() => window.href='/article/{{ id }}';">
+        <div>
+            <h1>{{ art.titre }}</h1>
+            <div>
+                {% for ligne in art.accroche %}
+                    <p>{{ ligne }}</p>
+                {% endfor %}
+            </div>
+        </div>
+        <img src="{{ art.lien_image }}" alt="Image d'article"/>
+    </section>
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+<p>Copyright 2024</p>
+<p></p>
+<p></p>
+{% endblock %}

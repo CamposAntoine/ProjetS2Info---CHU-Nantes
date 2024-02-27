@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block header %}
+<img src="{{ lien_image }}" alt="Image d'article">
+<div id="chapeau_article">
+    <h1>{{ titre }}</h1>
+    <div>
+        {% for ligne in accroche %}
+            <p>{{ ligne }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<p>Hello</p>
+{% endblock %}
+
+{% block footer %}
+<p>Copyright 2024</p>
+<p>{{ auteur }}</p>
+<p>{{ date }}</p>
+{% endblock %}
