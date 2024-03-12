@@ -42,19 +42,28 @@ header {
     }
 }
 
-header button {
-    margin: 7px;
-    padding: 0 10px;
+header a {
+    align-self: center;
+}
 
-    border: 2px solid white;
+button {
+    padding: 5px 10px;
     border-radius: 15px;
-
-    background-color: transparent;
-    color: white;
-    font-weight: bold;
 
     cursor: pointer;
     transition: .3s;
+}
+
+header button {
+    margin: 0 10px 0 0;
+
+    box-sizing: border-box;
+    max-width: 20vw;
+
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
 
     &:hover {
         background-color: white;
@@ -62,8 +71,9 @@ header button {
     }
 }
 
-#background-logo {
+#logo-arriere-plan {
     position: absolute;
+    z-index: -1;
 
     display: flex;
     justify-content: center;
@@ -71,7 +81,7 @@ header button {
     width: 100%;
     height: calc(100% - 50px);
 
-    filter: opacity(25%);
+    filter: opacity(15%);
 }
 
 #logo_chu_accueil {
@@ -87,6 +97,7 @@ header button {
     object-fit: contain;
     display: inline-block;
 }
+
 
 .mainmenubtn {
     background-color: skyblue;
@@ -126,3 +137,30 @@ header button {
 .dropdown:hover .dropdown-child {
     display: block;
 }
+
+#btn-debut-appel {
+    padding: 30px 35px;
+    
+    border: 2px solid var(--bleu);
+    color: var(--bleu);
+    background-color: transparent;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: var(--bleu);
+        color: white;
+    }
+}
+
+#interface-centrale {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+

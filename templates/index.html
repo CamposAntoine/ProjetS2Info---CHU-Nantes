@@ -20,13 +20,15 @@
         {% block button %}
         {% endblock %}
     </header>
-    <div id="background-logo">
+    <div id="logo-arriere-plan">
             <img src="./static/img/logo_chu.png" alt="Logo du CHU de Nantes" id="logo_chu_accueil"  />
             <img src="./static/img/logo_mines_paris_psl.png" alt="Logo de Mines Paris" id="logo_mines_accueil" />
     </div>
 
-    {% block body %}
-    {% endblock %}
+    <div id="interface-centrale">
+        {% block body %}
+        {% endblock %}
+    </div>
 
     <div class="dropdown">
         <button class="mainmenubtn">Spécialités</button>
@@ -38,6 +40,8 @@
           <a href="http://wwww.yourdomain.com/page5.html">Spécialité 5</a>
         </div>
       </div>
+
+
 </body>
 
 </html>
