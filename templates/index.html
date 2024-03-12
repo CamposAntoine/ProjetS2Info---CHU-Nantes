@@ -17,12 +17,16 @@
             <img id="logo-mines" src="./static/img/logo_mines_paris_psl.png" alt="Logo de Mines Paris" />
         </div>
 
-        <button>Button</button>
+        {% block button %}
+        {% endblock %}
     </header>
     <div id="background-logo">
             <img src="./static/img/logo_chu.png" alt="Logo du CHU de Nantes" id="logo_chu_accueil"  />
             <img src="./static/img/logo_mines_paris_psl.png" alt="Logo de Mines Paris" id="logo_mines_accueil" />
     </div>
+
+    {% block body %}
+    {% endblock %}
 </body>
 
 </html>
