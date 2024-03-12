@@ -4,44 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="shortcut icon" href="./static/img/logo_chu.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+    <link rel="shortcut icon" href="{{ url_for("static", filename="img/logo_chu.png") }}" type="image/x-icon">
     <title>Dashboard</title>
 </head>
 
 <body>
     <header>
         <div id="logo-box">
-            <img id="logo-chu" src="./static/img/logo_chu.png" alt="Logo du CHU de Nantes"/>
+            <img id="logo-chu" src="{{ url_for('static', filename='img/logo_chu.png') }}" alt="Logo du CHU de Nantes"/>
             <div id="separateur"></div>
-            <img id="logo-mines" src="./static/img/logo_mines_paris_psl.png" alt="Logo de Mines Paris" />
+            <img id="logo-mines" src="{{ url_for('static', filename='img/logo_mines_paris_psl.png') }}" alt="Logo de Mines Paris" />
         </div>
 
         {% block button %}
         {% endblock %}
     </header>
+
     <div id="logo-arriere-plan">
-            <img src="./static/img/logo_chu.png" alt="Logo du CHU de Nantes" id="logo_chu_accueil"  />
-            <img src="./static/img/logo_mines_paris_psl.png" alt="Logo de Mines Paris" id="logo_mines_accueil" />
+            <img src="{{ url_for('static', filename='img/logo_chu.png') }}" alt="Logo du CHU de Nantes" id="logo_chu_accueil"  />
+            <img src="{{ url_for('static', filename='img/logo_mines_paris_psl.png') }}" alt="Logo de Mines Paris" id="logo_mines_accueil" />
     </div>
 
     <div id="interface-centrale">
         {% block body %}
         {% endblock %}
     </div>
-
-    <div class="dropdown">
-        <button class="mainmenubtn">Spécialités</button>
-        <div class="dropdown-child">
-          <a href="http://wwww.yourdomain.com/page1.html">Spécialité 1</a>
-          <a href="http://wwww.yourdomain.com/page2.html">Spécialité 2</a>
-          <a href="http://wwww.yourdomain.com/page3.html">Spécialité 3</a>
-          <a href="http://wwww.yourdomain.com/page4.html">Spécialité 4</a>
-          <a href="http://wwww.yourdomain.com/page5.html">Spécialité 5</a>
-        </div>
-      </div>
-
-
 </body>
 
 </html>
