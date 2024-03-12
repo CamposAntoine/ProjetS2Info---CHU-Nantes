@@ -12,19 +12,18 @@ def get_appel():
 
 database={'admin': 'admin'}
 
-@app.route("/login/")
+@app.route("/login/", methods=['POST', 'GET'])
 def login():
-    return render_template("login.html")
-
-@app.route('/form_login', methods=['POST', 'GET'])
-def form_login():
+    if "username" not in request.form:
+        return render_template("login.html")
+    
     id= request.form['username']
     mdp= request.form['password']
     if id not in database:
         return render_template("login.html", message="Votre nom d'utilisateur est invalide.")
     else:
         if database[id]!=mdp:
-            render_template("login.html", message="Votre mot de passe et votre nom d'utilisateur ne correspondent pas.")
+           return render_template("login.html", message="Votre mot de passe et votre nom d'utilisateur ne correspondent pas.")
         else:
             return redirect("/admin")
 
