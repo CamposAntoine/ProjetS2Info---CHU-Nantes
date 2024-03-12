@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def get_menu():
-    return render_template("index.html")
+    return render_template("home.html")
+
+@app.route("/appel")
+def get_appel():
+    return render_template("appel.html")
 
 database={'admin': 'admin'}
 
