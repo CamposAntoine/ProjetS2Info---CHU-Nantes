@@ -98,6 +98,46 @@ header button {
     display: inline-block;
 }
 
+
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: thick double #32a1ce;;
+    cursor: pointer;
+    padding: 0.4em 2.6em;
+    margin-top:20px;
+    font-size: 20px;
+}
+.mainmenubtn:hover {
+    background-color: var(--bleu);
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: rgb(137, 137, 137);
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: var(--bleu);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-child a:nth-child(even) {
+    background-color: #e5e5e5; /* Couleur de fond pour les lignes paires */
+}
+
+.dropdown-child a:nth-child(odd) {
+    background-color: #999999; /* Couleur de fond pour les lignes impaires */
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
 #btn-debut-appel {
     padding: 30px 35px;
     
@@ -123,3 +163,4 @@ header button {
     width: 100%;
     height: calc(100% - 50px);
 }
+
