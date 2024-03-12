@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def get_menu():
-    return render_template("index.html")
+    return render_template("home.html")

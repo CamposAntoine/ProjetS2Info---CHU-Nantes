@@ -42,12 +42,18 @@ header {
     }
 }
 
+header a {
+    align-self: center;
+}
+
 header button {
-    margin: 7px;
-    padding: 0 10px;
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
 
     border: 2px solid white;
     border-radius: 15px;
+    box-sizing: border-box;
+    max-width: 20vw;
 
     background-color: transparent;
     color: white;
