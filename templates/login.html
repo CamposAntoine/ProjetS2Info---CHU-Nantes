@@ -4,4 +4,16 @@
 {% endblock %}
 
 {% block body %}
+<h1>
+    S'enregistrer comme administrateur
+</h1>
+<form action="/form_login" method="post">
+    <h2></h2>Nom d'utilisateur : <br>
+    <input type="text" name="username"><br>
+    Mot de passe : <br>
+    <input type="text" name="password"><br><br>
+    <input type="submit" name="S'enregistrer">
+</form>
+
+<h1> {{message}}</h1>
 {% endblock %}
