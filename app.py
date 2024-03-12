@@ -7,4 +7,5 @@ def get_menu():
     return render_template("home.html")
 
 @app.route("/appel")
+def get_appel():
     return render_template("appel.html")
