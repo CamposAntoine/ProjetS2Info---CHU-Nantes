@@ -62,6 +62,18 @@ header button {
     }
 }
 
+#background-logo {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 50px);
+
+    filter: opacity(25%);
+}
+
 #logo_chu_accueil {
     width: 30%;
     object-position: left;
