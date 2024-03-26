@@ -17,13 +17,6 @@ header {
     justify-content: space-between;
 }
 
-#login-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 #logo-box {
     display: flex;
     align-items: center;
@@ -105,34 +98,75 @@ header button {
     display: inline-block;
 }
 
+#login-box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 
-.mainmenubtn {
-    background-color: skyblue;
-    color: white;
-    border: thick double #32a1ce;;
-    cursor: pointer;
-    padding: 0.4em 2.6em;
-    margin-top:20px;
-    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 14px;
 }
-.mainmenubtn:hover {
-    background-color: var(--bleu);
+
+#login-form {
+    min-height: 20vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    & input[type=submit] {
+        padding: 5px 10px;
+        border-radius: 15px;
+        
+        cursor: pointer;
+        
+        transition: .3s;
     }
-.dropdown {
+}
+
+#spe-box {
     position: relative;
     display: inline-block;
+
+    background-color: white;
 }
-.dropdown-child {
-    display: none;
-    background-color: rgb(137, 137, 137);
-    min-width: 200px;
+
+#spe-title {
+    margin: 0;
+    padding: 1.5vh 7vw;
+    border: 1px solid var(--bleu);
+    border-bottom: 0;
 }
-.dropdown-child a {
-    color: var(--bleu);
-    padding: 10px;
-    text-decoration: none;
-    display: block;
+
+#spe-dropdown {
+    margin: 0;
+    border: 1px solid var(--bleu);
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    & > a {
+        padding: 1vh 7vw;
+
+        transition: .2s;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            background-color: var(--bleu);
+            color: white;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--bleu);
+        }
+    }
 }
+
+a:visited
 
 .dropdown-child a:nth-child(even) {
     background-color: #e5e5e5; /* Couleur de fond pour les lignes paires */
@@ -140,9 +174,6 @@ header button {
 
 .dropdown-child a:nth-child(odd) {
     background-color: #999999; /* Couleur de fond pour les lignes impaires */
-}
-.dropdown:hover .dropdown-child {
-    display: block;
 }
 
 #btn-debut-appel {

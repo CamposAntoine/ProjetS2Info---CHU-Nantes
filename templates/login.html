@@ -8,17 +8,19 @@
 
 {% block body %}
 <div id="login-box">
-<h1>
-    Connexion administrateur
-</h1>
-<form action="/login" method="post">
-    <h2></h2>Nom d'utilisateur : <br>
-    <input type="text" name="username"><br><br>
-    Mot de passe : <br>
-    <input type="password" name="password"><br><br>
-    <input style="padding: 5px 10px;border-radius: 15px; cursor: pointer;transition: .3s;" type="submit" name="S'enregistrer">
+<h1>Connexion administrateur</h1>
+<form id="login-form" action="/login" method="post">
+    Nom d'utilisateur :
+    <br>
+    <input type="text" name="username">
+    <br><br>
+    Mot de passe :
+    <br>
+    <input type="password" name="password">
+    <br><br>
+    <input type="submit" name="S'enregistrer">
 </form>
 
-<h1> {{message}}</h1>
+<h4>{{message}}</h4>
 </div>
 {% endblock %}
