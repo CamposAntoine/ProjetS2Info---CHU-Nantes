@@ -171,3 +171,16 @@ header button {
     height: calc(100% - 50px);
 }
 
+@keyframes spe-slide {
+    0% {left: 50% ;}
+    50% {left: 0%;}
+    100% {top: 0%;}
+
+}
+
+#anim-specialite {
+    animation-name: spe-slide;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
