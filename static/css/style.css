@@ -17,6 +17,13 @@ header {
     justify-content: space-between;
 }
 
+#login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #logo-box {
     display: flex;
     align-items: center;

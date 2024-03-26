@@ -1,19 +1,24 @@
 {% extends "index.html" %}
 
 {% block button %}
+<a href="..">
+    <button>Revenir à la page d'accueil</button>
+</a>
 {% endblock %}
 
 {% block body %}
+<div id="login-box">
 <h1>
-    S'enregistrer comme administrateur
+    Connexion administrateur
 </h1>
 <form action="/login" method="post">
     <h2></h2>Nom d'utilisateur : <br>
-    <input type="text" name="username"><br>
+    <input type="text" name="username"><br><br>
     Mot de passe : <br>
     <input type="password" name="password"><br><br>
-    <input type="submit" name="S'enregistrer">
+    <input style="padding: 5px 10px;border-radius: 15px; cursor: pointer;transition: .3s;" type="submit" name="S'enregistrer">
 </form>
 
 <h1> {{message}}</h1>
+</div>
 {% endblock %}
