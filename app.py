@@ -1,3 +1,4 @@
+import json
 from flask import Flask, render_template, session, request, redirect
     
 app = Flask(__name__)
@@ -8,7 +9,9 @@ def get_menu():
 
 @app.route("/appel")
 def get_appel():
-    return render_template("appel.html")
+    with open("test.json", 'r') as f:
+        tree = json.load(f)
+        return render_template("appel.html", **tree)
 
 database={'admin': 'admin'}
 
